@@ -68,7 +68,7 @@ class BinarySearchTree {
 
     } 
 
-    return null;
+    return currentNode;
   }
 
   remove(data) {   
@@ -117,52 +117,6 @@ class BinarySearchTree {
         return currentNode;
       } 
     }
-    
-  
-    /*a(this.treeRoot, data);
-       
-    function a(x, y) {
-      
-      while (x) {
-        if (y === x.data) { 
-          
-          if (x.left === null && x.right === null) {
-            x = null;
-            break;
-          }
-  
-          if (x.left && x.right === null) {
-            x = x.left;
-            break;
-          } 
-  
-          if (x.left === null && x.right) {
-            x = x.right;
-            break;
-          }
-  
-          if (x.left && x.right) {
-            let maxFromLeft = x.left;
-  
-            while (maxFromLeft.right) {
-              maxFromLeft = maxFromLeft.right;
-            }
-
-            x.data = maxFromLeft.data;
-    
-            a(x.left, maxFromLeft.data);
-            break;
-          }
-  
-        }
-  
-        if (y < x.data) x = x.left;
-  
-        if (y > x.data) x = x.right;
-       
-      }
-      
-    }*/
   }
 
   min() {
